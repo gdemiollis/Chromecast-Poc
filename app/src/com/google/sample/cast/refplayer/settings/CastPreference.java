@@ -33,8 +33,6 @@ import android.preference.PreferenceManager;
 public class CastPreference extends PreferenceActivity
         implements OnSharedPreferenceChangeListener {
 
-    public static final String APP_DESTRUCTION_KEY = "application_destruction";
-    public static final String FTU_SHOWN_KEY = "ftu_shown";
     public static final String VOLUME_SELCTION_KEY = "volume_target";
     public static final String TERMINATION_POLICY_KEY = "termination_policy";
     public static final String STOP_ON_DISCONNECT = "1";
@@ -95,15 +93,9 @@ public class CastPreference extends PreferenceActivity
         return labels[value];
     }
 
-    public static boolean isFtuShown(Context ctx) {
-        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(ctx);
-        return sharedPref.getBoolean(FTU_SHOWN_KEY, false);
-    }
 
-    public static void setFtuShown(Context ctx) {
-        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(ctx);
-        sharedPref.edit().putBoolean(FTU_SHOWN_KEY, true).commit();
-    }
+
+
 
     @Override
     protected void onResume() {

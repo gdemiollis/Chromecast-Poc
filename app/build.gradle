@@ -1,8 +1,5 @@
 repositories {
-    mavenCentral()
-    flatDir {
-        dirs 'libs'
-    }
+    flatDir { dirs 'libs' }
 }
 
 apply plugin: 'com.android.application'

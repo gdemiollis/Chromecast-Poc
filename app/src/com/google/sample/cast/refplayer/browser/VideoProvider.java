@@ -147,11 +147,18 @@ public class VideoProvider {
             String url, String imgUrl, String bigImageUrl, List<MediaTrack> tracks) {
         MediaMetadata movieMetadata = new MediaMetadata(MediaMetadata.MEDIA_TYPE_MOVIE);
 
+        url = "http://bellvps1.cpl.delvenetworks.com/media/e1b3e24ecb944abd8f4ed823a0b76ddc/f2cdf08069744197994ebeba4275a314/ottawa-attaque-v2-34cdfb14370d3b65b91c417651f3d57531c53ac9.m3u8";
+        subTitle = "Exemple de Sous-titre pour Video LP+";
+        title = "Exemple de Titre pour Video LP+";
+        imgUrl = "http://plus.lapresse.ca/cdn/img/LaPressePlus.svg";
+        bigImageUrl= "http://plus.lapresse.ca/cdn/img/LaPressePlus.svg";
+
         movieMetadata.putString(MediaMetadata.KEY_SUBTITLE, subTitle);
         movieMetadata.putString(MediaMetadata.KEY_TITLE, title);
         movieMetadata.putString(MediaMetadata.KEY_STUDIO, studio);
         movieMetadata.addImage(new WebImage(Uri.parse(imgUrl)));
         movieMetadata.addImage(new WebImage(Uri.parse(bigImageUrl)));
+
 
         return new MediaInfo.Builder(url)
                 .setStreamType(MediaInfo.STREAM_TYPE_BUFFERED)

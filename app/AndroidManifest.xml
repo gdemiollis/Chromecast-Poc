@@ -28,7 +28,7 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name="com.google.sample.cast.refplayer.VideoBrowserActivity"
+            android:name=".mediaplayer.VideoBrowserActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -51,7 +51,7 @@
             android:name="com.google.sample.castcompanionlibrary.cast.player.VideoCastControllerActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
-            android:parentActivityName="com.google.sample.cast.refplayer.VideoBrowserActivity"
+            android:parentActivityName=".mediaplayer.VideoBrowserActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.CastVideoOverlayYellow" >
             <meta-data
