@@ -37,7 +37,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class VideoProvider {
+public class VideoProvider implements DataProvider {
 
     private static final String TAG = "VideoProvider";
     private static String TAG_MEDIA = "videos";

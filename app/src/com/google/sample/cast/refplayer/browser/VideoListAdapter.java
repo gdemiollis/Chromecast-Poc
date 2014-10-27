@@ -41,7 +41,6 @@ public class VideoListAdapter extends ArrayAdapter<MediaInfo> {
 
     /**
      * @param context
-     * @param resource
      */
     public VideoListAdapter(Context context) {
         super(context, 0);

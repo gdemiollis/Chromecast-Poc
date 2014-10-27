@@ -27,17 +27,15 @@ import java.util.List;
 public class VideoItemLoader extends AsyncTaskLoader<List<MediaInfo>> {
 
     private static final String TAG = "VideoItemLoader";
-    private final String mUrl;
 
-    public VideoItemLoader(Context context, String url) {
+    public VideoItemLoader(Context context) {
         super(context);
-        this.mUrl = url;
     }
 
     @Override
     public List<MediaInfo> loadInBackground() {
         try {
-            return VideoProvider.buildMedia(mUrl);
+            return new ReplicaVideoProvider(getContext()).buildMediaList();
         } catch (Exception e) {
             Log.e(TAG, "Failed to fetch media data", e);
             return null;

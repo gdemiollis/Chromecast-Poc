@@ -99,7 +99,7 @@ public class VideoBrowserListFragment extends ListFragment implements
      */
     @Override
     public Loader<List<MediaInfo>> onCreateLoader(int arg0, Bundle arg1) {
-        return new VideoItemLoader(getActivity(), CATALOG_URL);
+        return new VideoItemLoader(getActivity());
     }
 
     public static VideoBrowserListFragment newInstance() {

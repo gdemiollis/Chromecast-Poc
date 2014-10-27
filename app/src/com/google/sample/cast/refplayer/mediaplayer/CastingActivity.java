@@ -20,12 +20,11 @@ import com.google.sample.castcompanionlibrary.widgets.MiniController;
 
 public abstract class CastingActivity extends ActionBarActivity {
 
-	private VideoCastManager mCastManager;
+	protected VideoCastManager mCastManager;
 	private MenuItem mediaRouteMenuItem;
 	private MiniController mMini;
 	private ReplicaVideoCastConsumer mCastConsumer;
 	protected MediaInfo mSelectedMedia;
-
 	protected PlaybackLocation mLocation;
 
 	@Override
