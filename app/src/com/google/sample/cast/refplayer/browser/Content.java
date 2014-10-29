@@ -48,7 +48,8 @@ public class Content {
 		 */
 
 		movieMetadata.putString(MediaMetadata.KEY_SUBTITLE, description);
-		movieMetadata.putString(MediaMetadata.KEY_TITLE, title);
+        movieMetadata.putString(MediaMetadata.KEY_TITLE, title);
+        movieMetadata.putString(MediaMetadata.KEY_STUDIO, creator);
 		movieMetadata.addImage(new WebImage(Uri.parse(thumbnailUrl)));
 		movieMetadata.addImage(new WebImage(Uri.parse(thumbnailUrl)));
 

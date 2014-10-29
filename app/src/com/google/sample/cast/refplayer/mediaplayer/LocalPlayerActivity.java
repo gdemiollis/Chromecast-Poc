@@ -437,9 +437,9 @@ public class LocalPlayerActivity extends CastingActivity {
 			mVideoView.invalidate();
 		} else {
 			MediaMetadata mm = mSelectedMedia.getMetadata();
-			mDescriptionView.setText(mm.getString(MediaMetadata.KEY_STUDIO));
+			mDescriptionView.setText(mm.getString(MediaMetadata.KEY_SUBTITLE));
 			mTitleView.setText(mm.getString(MediaMetadata.KEY_TITLE));
-			mAuthorView.setText(mm.getString(MediaMetadata.KEY_SUBTITLE));
+			mAuthorView.setText(mm.getString(MediaMetadata.KEY_STUDIO));
 			mDescriptionView.setVisibility(View.VISIBLE);
 			mTitleView.setVisibility(View.VISIBLE);
 			mAuthorView.setVisibility(View.VISIBLE);
