@@ -72,12 +72,10 @@ public abstract class CastingActivity extends ActionBarActivity {
 	protected void setupActionBar() {
 		getSupportActionBar().setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
 		getSupportActionBar().setIcon(R.drawable.actionbar_logo_castvideos);
-		getSupportActionBar().setDisplayShowTitleEnabled(false);
 		getSupportActionBar().setDisplayHomeAsUpEnabled(false);
 		getSupportActionBar().setDisplayUseLogoEnabled(false);
-		getSupportActionBar().setDisplayShowHomeEnabled(false);
-		getSupportActionBar().setBackgroundDrawable(
-		        getResources().getDrawable(R.drawable.ab_transparent_democastoverlay));
+        getSupportActionBar().setDisplayShowHomeEnabled(false);
+		//getSupportActionBar().setBackgroundDrawable(getResources().getDrawable(R.drawable.ab_transparent_democastoverlay));
 	}
 
 	@Override

@@ -155,8 +155,6 @@ public class LocalPlayerActivity extends CastingActivity {
 				setCoverArtStatus(com.google.sample.castcompanionlibrary.utils.Utils.
 				        getImageUrl(mSelectedMedia, 0));
 			}
-
-			getSupportActionBar().setTitle("");
 		} else {
 			stopControllersTimer();
 			setCoverArtStatus(com.google.sample.castcompanionlibrary.utils.Utils.

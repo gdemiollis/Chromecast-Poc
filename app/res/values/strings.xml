@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Cast Videos</string>
+    <string name="app_name">LP+ Videos</string>
     <string name="app_id">51BE974A</string>
     <string name="action_settings">Settings</string>
     <string name="cast_app_name">GoogleCastPlayer</string>
